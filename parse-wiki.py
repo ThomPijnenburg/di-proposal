@@ -1,3 +1,7 @@
+# Simple example of streaming a Wikipedia 
+# Copyright 2017 by Jeff Heaton, released under the The GNU Lesser General Public License (LGPL).
+# http://www.heatonresearch.com
+# -----------------------------
 
 import xml.etree.ElementTree as etree
 import codecs
