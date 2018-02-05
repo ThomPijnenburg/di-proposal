@@ -74,7 +74,7 @@ plt.tight_layout()
 plt.savefig('plots/plot1.png')
 
 
-# In[145]:
+# In[154]:
 
 # format = lambda x: str(x).split('T')[0]
 def format(x):
@@ -87,11 +87,11 @@ search_results_df = search_results_df.sort_values('date', ascending=True)
 
 
 
-sns.countplot(search_results_df['date'], palette='GnBu_d')
-plt.xticks(rotation=90)
+# sns.countplot(search_results_df['date'], palette='GnBu_d')
+# plt.xticks(rotation=90)
 
 
-plt.savefig('plots/plot2.png')
+# plt.savefig('plots/plot2.png')
 
 
 # In[151]:
@@ -113,15 +113,10 @@ date_count = pd.DataFrame(date_count)
 date_count.head()
 
 
-# In[150]:
+# In[153]:
 
-origin = dates[0].split("-")
-origin
-
-
-# In[ ]:
-
-sns.regplot('')
+sns.regplot('count', 'months', date_count)
+plt.savefig('plots/plot2.png')
 
 
 # ## arXiv APi
