@@ -1,1 +1,1 @@
-# di-proposal
+see Analysis.ipynb
